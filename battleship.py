@@ -45,6 +45,6 @@ for turn in range(4):
    
     if turn == 3:
                 print "Game over"
-                
+               
 return 0
 
