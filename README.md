@@ -1,2 +1,2 @@
 # standalone-projects
-quick coding projects done to learn how to program
+quick coding projects done to learn to code
