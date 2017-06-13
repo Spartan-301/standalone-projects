@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Main {
 
     private static ArrayList<Double> getVariable(){
+        
         int arraySize;
         System.out.println("How many elements in the data set?");
         Scanner size = new Scanner(System.in);
@@ -12,23 +13,26 @@ public class Main {
         double[] array = new double[arraySize];
 
         System.out.println("input the numbers; line by line");
+        
         for(int i=0;i<arraySize;i++) {
             Scanner elements = new Scanner(System.in);
             array[i] = elements.nextInt();
-        }
+        }//loads user input to array
 
         double mean = 0;
+        
         for(int i=0;i<arraySize;i++){
             mean = mean + array[i];
-        }
-        mean = mean / arraySize;
+        }//calculates the mean of all data points in array
+        mean = mean / arraySize;//calculates the x mean
 
         ArrayList<Double> variable = new ArrayList<Double>();
 
         for(int i=0;i<arraySize;i++){
             double k = array[i]-mean;
             variable.add(k);
-        }
+        }//loads information to list: variable
+        
         //System.out.println(variable);
 
         return variable;
